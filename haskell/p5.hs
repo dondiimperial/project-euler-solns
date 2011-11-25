@@ -10,5 +10,4 @@ groupFactors xs (y:ys) = fst partitioned:groupFactors (snd partitioned) ys
                        
 solveIt x = product $ map (product . last) $ filter (/=[]) $ groupFactors (primeFactors x) [1..x]
 
-main = do putStrLn . show $ solveIt 20              
-
+main = do putStrLn . show $ solveIt 20

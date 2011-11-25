@@ -11,4 +11,4 @@ solution (xs) = max (solution (take 5 xs)) (solution (tail xs))
 
 solveIt = solution digits                
 
-                  
+main = do putStrLn . show $ solveIt

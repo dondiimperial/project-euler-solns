@@ -107,6 +107,4 @@ extractDigits n x
     where prevTen =  floor $ 10 ** (fromIntegral n - 1)          
           nextTen = floor $ 10 ** (fromIntegral n)
           
-solveIt = extractDigits 10 . sum $ numbers
-
-                
+main = do putStrLn . show . extractDigits 10 . sum $ numbers

@@ -1,3 +1,3 @@
 import Utils
   
-solveIt = sum $ primesTo 2000000
+main = do putStrLn . show . sum $ primesTo 2000000

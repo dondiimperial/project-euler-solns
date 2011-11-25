@@ -14,4 +14,4 @@ solution n = foldl' eval (0,0) [1..n]
 
 solveIt = solution 999999
 
-main = do putStrLn . show $ solveIt          
+main = do putStrLn . show $ solveIt

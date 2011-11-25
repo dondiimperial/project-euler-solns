@@ -18,4 +18,4 @@ columns = transpose grid
 diags = getDiags grid
 backDiags = getDiags $ reverse grid
 
-solveIt = maximum $ map product (concat . concat $ map (\x -> map fours x) [rows,columns,diags,backDiags])
+main = do putStrLn . show . maximum $ map product (concat . concat $ map (\x -> map fours x) [rows,columns,diags,backDiags])

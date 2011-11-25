@@ -5,4 +5,4 @@ primes = sieve [2..]
 
 nPrime x = primes !! (x - 1)
 
-solveIt = nPrime 10001
+main = do putStrLn . show $ nPrime 10001
